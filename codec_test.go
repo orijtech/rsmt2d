@@ -11,6 +11,8 @@ var (
 	decodedDataDump [][]byte
 )
 
+var sink interface{}
+
 func BenchmarkEncoding(b *testing.B) {
 	// generate some fake data
 	data := generateRandData(128)
